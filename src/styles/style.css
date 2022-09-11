@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1920px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.all_container{
+  padding: 0px 94px;
+}
+.navbar_page{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
