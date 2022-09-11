@@ -9,7 +9,7 @@ import Description from './Description';
 function Turlari() {
   let url = useParams();
   const dispatch = useDispatch();
-  const [limit, setLimit] = useState(8);
+  const [limit] = useState(8);
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
   const [count, setCount] = useState(0);
