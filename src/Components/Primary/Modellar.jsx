@@ -5,8 +5,8 @@ import { setCategory } from '../../redux/actions/actionsType';
 import { service } from '../../service/axios.service';
 
 function Modellar() {
-  const [limit, setLimit] = useState(5);
-  const [page, setPage] = useState(1);
+  const [limit] = useState(5);
+  const [page] = useState(1);
 
   const dispatch = useDispatch();
 
