@@ -34,8 +34,8 @@ function Description() {
       <div className="d-block w-100">
         <ThreeSixty
           amount={72}
-          imagePath={basePath}
-          fileName="{index}.jpeg"
+          imagePath={'../images/chevrolet/3d'}
+          fileName="{index}.png"
           spinReverse
         />
       </div>
