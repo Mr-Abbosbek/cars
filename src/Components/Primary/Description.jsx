@@ -8,7 +8,6 @@ import Iframe from 'react-iframe';
 function Description() {
   let url = useParams();
   console.log(url.desc);
-  const basePath = 'https://cdn.kia-motors.uz/exterior/Seltos/20202020/G195/SWP';
   // const basePath = "https://fastly-production.24c.in/webin/360";
   // useEffect(() => {
   //   try {
@@ -34,7 +33,7 @@ function Description() {
       <div className="d-block w-100">
         <ThreeSixty
           amount={72}
-          imagePath={'../images/chevrolet/3d'}
+          imagePath={'./../images/chevrolet/3d'}
           fileName="{index}.png"
           spinReverse
         />
