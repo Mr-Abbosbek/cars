@@ -32,7 +32,9 @@ function Description() {
     year,
   } = selectedTypeArr;
 
-  return selectedTypeArr.length ? (
+  console.log(selectedTypeArr.length);
+
+  return !selectedTypeArr.length ? (
     <div className="all_container description_page">
       <p className="fw-bold">
         <Link to="/">Bosh sahifa</Link> {">"} <Link to="/">Modellar</Link> {">"}{" "}
