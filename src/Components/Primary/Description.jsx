@@ -110,6 +110,7 @@ function Description() {
               imagePath={"../../../images/chevrolet/3d"}
               fileName="{index}.png"
               spinReverse
+              className="w-100 h-100"
             />
           </div>
           <div className="w-100 py-4 d-flex justify-content-center">
