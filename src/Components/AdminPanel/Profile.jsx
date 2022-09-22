@@ -1,11 +1,11 @@
 import React from 'react';
 
-function AdminPanel() {
+function Profile() {
   return (
     <div>
-      Admin Panel
+      Profile
     </div>
   );
 }
 
-export default AdminPanel;
+export default Profile;

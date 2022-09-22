@@ -7,15 +7,140 @@ body {
   max-width: 1920px;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
   color: #000;
 }
 
-.all_container{
+a:focus {
+  color: #6F767E;
+}
+
+.all_container {
   padding: 0px 94px;
 }
-.navbar_page{
-  padding-top: 40px;
-  padding-bottom: 40px;
+
+.navbar_page {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.desc_title h1 {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  padding: 20px 0px 50px 0px;
+}
+
+.info_text {
+  background: #F6F6F6;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.description_page .info_text h6 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  line-height: 35px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.description_page .info_text h6 p {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.info_image {
+  padding-left: 30px;
+}
+
+.v360-menu-btns {
+  display: none;
+}
+
+.info_image input,
+.info_image label {
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  box-shadow: 0 0 0 0.25rem rgb(0, 0, 0, .7);
+  border-color: #000 !important;
+}
+
+.image_360 {
+  height: 500px;
+}
+
+.bar_icon .icons {
+  width: 25px;
+}
+
+.admin_home_page {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.admin_home_page .table {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.default_block {
+  width: 26px;
+  height: 42px;
+  background: #FFD88D;
+  border-radius: 4px;
+}
+
+.modal_box{
+  width: 1200px;
+  height: 850px;
+}
+.modal_form{
+  /* overflow-y: scroll; */
+  width: 100%;
+  height: 100%;
+  z-index: 11111;
+}
+
+form .form-control, form .form-select{
+  background: #F4F4F4 !important;
+  border-radius: 12px !important;
+}
+form button {
+  border-radius: 12px !important;
+}
+.form-control:focus, .form-select:focus {
+  border-color: none;
+  box-shadow: none;
+}
+.modal_block {
+  margin-top: -42px;
+}
+.modal_block input{
+  opacity: 0;
+}
+.modal_block label {
+  cursor: pointer;
+  color: #6F767E;
+}
+.modal_default{
+  width: 26px;
+  height: 42px;
+  background: #CABDFF;
+  border-radius: 4px;
 }

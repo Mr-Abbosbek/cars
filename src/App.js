@@ -4,7 +4,7 @@ import Router from "./router/Router";
 import { service } from "./service/axios.service";
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false);
+  const [isAuth, setIsAuth] = useState(true);
   // const [role, setRole] = useState(false);
 
   useEffect(() => {
@@ -14,13 +14,13 @@ function App() {
     }
     service.get("/employee/account")
     .then(()=>{
-      setIsAuth(true);
+      setIsAuth(false);
     })
   },[])
 
   return (
     <AuthContext.Provider value={{isAuth, setIsAuth}}>
-        <Router />
+      <Router />
     </AuthContext.Provider>
   );
 }

@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../context";
-import { privateRoute, publicRoute } from "./Route";
+import { publicRoute } from "./Route";
 import { Route, Routes, Navigate, BrowserRouter } from "react-router-dom";
-import Navbar from "../Components/Primary/Navbar";
+import Navbar from "../Components/Navbar";
+import AdminPanelNav from "../Components/AdminPanelNav";
 
 function Router() {
   const { isAuth } = useContext(AuthContext);
@@ -10,7 +11,7 @@ function Router() {
     <BrowserRouter>
     <Navbar />
       <Routes>
-        {privateRoute.map((item) => (
+        {publicRoute.map((item) => (
           <Route
             key={item.path}
             path={item.path}
@@ -23,17 +24,7 @@ function Router() {
     </BrowserRouter>
   ) : (
     <BrowserRouter>
-      <Routes>
-        {publicRoute.map((item) => (
-          <Route
-            key={item.path}
-            path={item.path}
-            element={item.element}
-            exact
-          />
-        ))}
-        <Route path="*" element={<Navigate to="/login" replace />} />
-      </Routes>
+      <AdminPanelNav />
     </BrowserRouter>
   );
 }

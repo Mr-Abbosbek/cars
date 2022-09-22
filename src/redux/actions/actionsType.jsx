@@ -32,10 +32,30 @@ export const deleteProduct = (id) => {
 
 // ========================================================================
 
+
+
 export const setType = (types) => {
   return {
     type: ActionTypes.SET_TYPE,
     payload: types,
+  }
+}
+
+export const setSelectedType = (type) => {
+  return {
+    type: ActionTypes.SELECTED_TYPE,
+    payload: type,
+  }
+}
+
+
+// ========================================================================
+
+
+export const setAllType = (type) => {
+  return {
+    type: ActionTypes.SET_ALL_TYPE,
+    payload: type,
   }
 }
 
@@ -59,3 +79,7 @@ export const deleteType = (id) => {
     payload: id,
   }
 }
+
+
+// ========================================================================
+

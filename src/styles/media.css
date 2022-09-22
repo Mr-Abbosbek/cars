@@ -1,0 +1,9 @@
+@media (max-width: 1840px) {
+  .modal_box{
+    width: 1100px !important;
+    height: 700px !important;
+  }
+  .modal_form{
+    overflow-y: scroll;
+  }
+}
