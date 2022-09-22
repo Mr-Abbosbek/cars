@@ -25,8 +25,8 @@ const style = {
 
 export default function TransitionsModal({ title }) {
   const [open, setOpen] = useState(false);
-  const [file, setFile] = useState("");
-  const [marka, setMarka] = useState("");
+  const [setFile] = useState("");
+  const [setMarka] = useState("");
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setOpen(false);
@@ -75,13 +75,14 @@ export default function TransitionsModal({ title }) {
                       Markasi
                     </label>
                     <select
-                      class="form-select fw-bold"
+                      className="form-select fw-bold"
                       aria-label="Default select example"
+                      onChange={(e)=>setMarka(e.target.value)}
                     >
-                      <option selected>Chevrolet</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option defaultChecked defaultValue="11">Chevrolet</option>
+                      <option defaultValue="1">One</option>
+                      <option defaultValue="2">Two</option>
+                      <option defaultValue="3">Three</option>
                     </select>
                     <span className="d-flex w-100 justify-content-end px-3"><KeyboardArrowDownOutlinedIcon sx={{marginTop: "-30px"}} /></span>
                   </div>
@@ -90,13 +91,13 @@ export default function TransitionsModal({ title }) {
                       Tanirovkasi
                     </label>
                     <select
-                      class="form-select"
+                      className="form-select"
                       aria-label="Default select example"
                     >
-                      <option selected>Open this select menu</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
+                      <option defaultChecked defaultValue="11">Open this select menu</option>
+                      <option defaultValue="1">One</option>
+                      <option defaultValue="2">Two</option>
+                      <option defaultValue="3">Three</option>
                     </select>
                     <span className="d-flex w-100 justify-content-end px-3"><KeyboardArrowDownOutlinedIcon sx={{marginTop: "-30px"}} /></span>
                   </div>
@@ -118,7 +119,7 @@ export default function TransitionsModal({ title }) {
                     </label>
                     <input
                       type="text"
-                      defaultValue={""}
+                      // defaultValue={""}
                       className="form-control py-2"
                       placeholder="Kiriting"
                     />
@@ -141,7 +142,7 @@ export default function TransitionsModal({ title }) {
                     </label>
                     <input
                       type="text"
-                      defaultValue={""}
+                      // defaultValue={""}
                       className="form-control py-2"
                       placeholder="Kiriting"
                     />
@@ -164,7 +165,7 @@ export default function TransitionsModal({ title }) {
                     </label>
                     <input
                       type="text"
-                      defaultValue={""}
+                      // defaultValue={""}
                       className="form-control py-2"
                       placeholder="Kiriting"
                     />
@@ -177,7 +178,7 @@ export default function TransitionsModal({ title }) {
                     </label>
                     <input
                       type="text"
-                      defaultValue={file.slice(12) || ""}
+                      // defaultValue={file.slice(12) || ""}
                       className="form-control py-2 px-5"
                       accept="image/png, image/gif, image/jpeg"
                       placeholder="Yuklash"
@@ -190,9 +191,9 @@ export default function TransitionsModal({ title }) {
                         id="camera1"
                         type="file"
                         className="form-control py-2"
-                        defaultValue={file || ""}
+                        // defaultValue={file || ""}
                         accept="image/png, image/gif, image/jpeg"
-                        onChange={(e) => setFile(e.target.value)}
+                        // onChange={(e) => setFile(e.target.value)}
                       />
                     </div>
                   </div>
@@ -202,7 +203,7 @@ export default function TransitionsModal({ title }) {
                     </label>
                     <input
                       type="text"
-                      defaultValue={file.slice(12) || ""}
+                      // defaultValue={file.slice(12) || ""}
                       className="form-control py-2 px-5"
                       accept="image/png, image/gif, image/jpeg"
                       placeholder="Yuklash"
@@ -215,9 +216,9 @@ export default function TransitionsModal({ title }) {
                         id="camera2"
                         type="file"
                         className="form-control py-2"
-                        defaultValue={file || ""}
+                        // defaultValue={file || ""}
                         accept="image/png, image/gif, image/jpeg"
-                        onChange={(e) => setFile(e.target.value)}
+                        // onChange={(e) => setFile(e.target.value)}
                       />
                     </div>
                   </div>
@@ -242,7 +243,7 @@ export default function TransitionsModal({ title }) {
                     </label>
                     <input
                       type="text"
-                      defaultValue={file.slice(12) || ""}
+                      // defaultValue={file.slice(12) || ""}
                       className="form-control py-2 px-5"
                       accept="image/png, image/gif, image/jpeg"
                       placeholder="Yuklash"
@@ -255,9 +256,9 @@ export default function TransitionsModal({ title }) {
                         id="camera"
                         type="file"
                         className="form-control py-2"
-                        defaultValue={file || ""}
+                        // defaultValue={file || ""}
                         accept="image/png, image/gif, image/jpeg"
-                        onChange={(e) => setFile(e.target.value)}
+                        // onChange={(e) => setFile(e.target.value)}
                       />
                     </div>
                   </div>

@@ -8,8 +8,8 @@ import Modal from '../UI/ModalCategory';
 import ModalCar from '../UI/ModalCar';
 
 function Home() {
-  const [limit, setLimit] = useState(6);
-  const [page, setPage] = useState(1);
+  const [limit] = useState(6);
+  const [page] = useState(1);
   const [total, setTotal] = useState(0);
   const dispatch = useDispatch();
   const allTypesArr = useSelector(state => state.allType.allTypeDate);
@@ -31,7 +31,7 @@ function Home() {
     } catch (error) {
       console.log(error);
     }
-  }, [limit, page, dispatch]);
+  }, [limit, page, dispatch, total]);
 
   const typeTitle = [
     "#",

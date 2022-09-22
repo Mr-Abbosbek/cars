@@ -26,7 +26,7 @@ const style = {
 export default function TransitionsModal({ title }) {
   const [open, setOpen] = useState(false);
   const [file, setFile] = useState('');
-  const [marka, setMarka] = useState('');
+  // const [marka, setMarka] = useState('');
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setOpen(false);
